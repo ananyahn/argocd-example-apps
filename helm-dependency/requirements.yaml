@@ -1,7 +1,6 @@
 dependencies:
-  - name: mariadb
+  - name: airflow
     version: 7.x.x
     repository: https://kubernetes-charts.storage.googleapis.com/
-    condition: mariadb.enabled
-    tags:
-      - wordpress-database
+    condition: airflow.enabled
+    
